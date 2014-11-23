@@ -53,5 +53,3 @@ makeCacheMatrix <- function(i = matrix()) {
 # Function list is created
 
 }
-
-}
