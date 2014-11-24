@@ -53,3 +53,25 @@ makeCacheMatrix <- function(i = matrix()) {
 # Function list is created
 
 }
+
+
+cacheSolve <- function(s, ...) {
+
+	inverse <- x$getInverse()
+# Gets the most recent inverse value
+
+	if(!is.null(inverse)){
+	message("I still want my cached data")
+	return(inverse)
+# Function will return the non-Null value
+	}
+# If value is NULL, matrix i is retrieved and solve function is used 
+# for calculation
+	data <- s$get()
+	inverse <- solve(data, ...)
+	s$setInverse(inverse)
+# New calculated value is set by inverse
+	Inverse 
+
+# New value is returned 
+	}
